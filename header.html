@@ -1,0 +1,23 @@
+<template name="header">
+  <header>
+    <p id="BuyCar">Logo : Buy Car</p>
+    <p>{{incompleteCount}} véhicules en ligne en ce moment </p>
+
+    <label class="hide-sold">
+      <input type="checkbox" checked="{{hideSold}}" />
+      Masquer les annonces vendues
+    </label>
+
+    {{> loginButtons}}
+     
+    <div class="navBar">
+      <ul class="nav">
+        <li><a class="toggle-home" href="/">Accueil</a></li>
+        <li><a class="toggle-research" href="/">Rechercher</a></li>
+        <li><a class="toggle-sale" href="insertCar">Vendre</a></li>
+        <li><a class="toggle-contacts" href="contacts">Mes contacts</a></li>
+      </ul>        
+    </div>
+
+  </header>
+</template>

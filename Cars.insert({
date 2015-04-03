@@ -1,0 +1,52 @@
+Cars.insert({
+make :"BMW",
+model:"335",
+type:"coupe",
+firstRegistration:"2012",
+mileage:"24",
+power:"306",
+price:"48900",
+fuelType:"essence",
+gearbox:"manuelle",
+vendorType:"dealer",
+vendorName:"professionnel",
+vendorAdress:"71 Avenue de Versailles PARIS",
+phoneNumber:"0146470000",
+email:"neubauer@bmw.fr",
+});
+
+Cars.insert({
+make :"Mercedes",
+model:"Sl350",
+type:"cabriolet",
+firstRegistration:"2011",
+mileage:"68000",
+power:"306",
+price:"37000",
+fuelType:"essence",
+gearbox:"automatique",
+vendorType:"professionnel",
+vendorName:"Neubauer",
+vendorAdress:"71 Avenue de Versailles PARIS",
+phoneNumber:"0146470000",
+email:"neubauer@bmw.fr",
+department : "75"
+});
+
+Cars.insert({
+make :"Audi",
+model:"A4",
+type:"berline",
+firstRegistration:"2006",
+mileage:"113500",
+power:"180",
+price:"19000",
+fuelType:"diesel",
+gearbox:"manuelle",
+vendorType:"particulier",
+vendorName:"Dupont",
+vendorAdress:"108 Avenue de Raoul TALENCE",
+phoneNumber:"0146470000",
+email:"jean.dupont@hotmail.fr",
+department : "33"
+});

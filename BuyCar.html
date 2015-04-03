@@ -1,0 +1,24 @@
+<template name ="buycar">
+    <div class="container">
+      {{> header}}
+      {{> searchBar}}
+      {{> insertImages}}
+      <ul class="carsList">
+        <table>
+          <tr> 
+            <th>Marque</th>
+            <th>Modèle</th>
+            <th>Carburant</th>    
+            <th>Année</th>
+            <th id="km">Kilométrage</th>    
+            <th>Prix</th>
+          </tr>
+          {{#each cars}}
+            {{>car}}
+          {{/each}}
+        </table>
+      </ul>
+      {{> footer}}
+    </div>
+
+</template>

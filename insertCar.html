@@ -1,0 +1,65 @@
+<template name="insertCar">
+	<div class="container">	
+	{{> header}}
+	<h1>Vendez gratuitement votre véhicule</h1>
+
+	  <form class="new-car">
+	    <select name="make" id="make">
+			<option>Marque</option> <!-- Faire Ajax et boucle + Dasn un form + on select d'une option...-->
+			<option>AUDI</option>
+			<option>BMW</option>
+			<option>MERCEDES</option>
+			<option>VOLKSWAGEN</option>
+	    </select><br/>
+	    <select name="model" id="model">
+			<option>Modèle</option> <!-- Faire Ajax et boucle + Dasn un form + on select d'une option...-->
+			<option>M4</option>
+			<option>Option 2</option>
+	    </select><br/>
+	    <select name="type" id="type" placeholder="carosserie">
+			<option>Carosserie</option>
+			<option>Berline</option>
+			<option>Break</option>
+			<option>Camion</option>
+			<option>Citadine</option>
+			<option>Cabriolet</option>
+			<option>Coupé</option>
+			<option>Van</option>
+			<option>4x4</option>
+	    </select><br/>
+	    Date de mise en circulation : <input type="date" name="firstRegistration" id="firstRegistration" min="1900-01-01"><br/>
+	    Kilométrage : <input type="number" name="mileage" id="mileage"><br/>
+	    Puissance (Cv réelle) : <input type="number" name="power" id="power" min="20" max="9999"><br/>
+	    Prix : <input type="number" name="price" id="price" min="1" max="9999999"><br/>
+	    <select name="fuelType" id="fuelType">
+			<option>Carburant</option> <!-- Faire Ajax et boucle + Dasn un form + on select d'une option...-->
+			<option>Essence</option>
+			<option>Diesel</option>
+			<option>Hybride</option>
+			<option>Electrique</option>
+			<option>Bio Ethanol</option>
+	    </select><br/>
+	    <select name="gearbox" id="gearbox">
+			<option>Boite de vitesse</option> 
+			<option>Manuelle</option> 
+			<option>Automatique</option>
+			<option>Mécanique robotisée</option>
+	    </select><br/>
+	    <select name="vendorType" id="vendorType">
+			<option>Particuel</option> <!-- Faire Ajax et boucle + Dans un form + on select d'une option...-->
+			<option>Professionel</option>
+	    </select><br/>
+	    Texte de l'annonce : <input type="text" name="description" id ="description" placeholder="Texte de l'annonce" /><br/>
+	    Nom : <input type="text" name="vendorName" id="vendorName" placeholder="Prénom NOM" /><br/>
+	    Adresse : <input type="text" name="vendorAddress" id="vendorAddress" placeholder="Adresse" /><br/>
+	    Téléphone : <input type="tel" name="phoneNumber" id="phoneNumber"><br/>
+	    E-mail : <input type="text" name="email" id="email" placeholder="e-mail" /><br/>
+
+	    <!-- {{> insertImages}} -->
+
+	    <input type="submit" value="Insérer mon annonce">
+	  </form>
+	
+	{{> footer}}
+	</div>
+</template>

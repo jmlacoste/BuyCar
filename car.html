@@ -1,0 +1,25 @@
+<template name="car">   
+      <tr class="carDetailsButton">
+          <!--<td><img src = "/BuyCar/Images/NissanImage.png"/></td>  Mettre une fonction qui récuper la bonne image -->
+          <td>
+            {{#if checked}}{{/if}} {{#if private}}{{/if}}
+            <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+            {{#if isOwner}}
+              <button class="delete">&times; Supprimer l'annonce</button>
+              <button class="toggle-private">
+                {{#if private}}
+                  Private    
+                {{else}}
+                  Public
+                {{/if}}
+              </button>
+            {{/if}}
+          </td>
+          <td><strong>{{make}}</strong></td>
+          <td><b>{{model}}</b></td>    
+          <td>{{fuelType}}</td>
+          <td>{{firstRegistration}}</td>
+          <td id="km">{{mileage}} Km</td>
+          <td id="price"><strong>{{price}} €</strong></td>
+      </tr>
+</template>
